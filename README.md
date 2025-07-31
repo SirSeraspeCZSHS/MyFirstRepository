@@ -1,2 +1,2 @@
 # MyFirstRepository
-This is my eber this repository here in git hub
+This is my first ever this repository here in git hub
