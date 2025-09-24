@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f9;
+  padding: 20px;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Flex container for horizontal layout */
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Section card styles */
+.list-section {
+  flex: 1;
+  /* min-width: 280px; */
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Headings */
+.list-section h2 {
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Generic list container */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Unordered list style */
+.list.unordered .list-item::before {
+  content: "•";
+  color: #4caf50;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+/* Ordered list style */
+.list.ordered {
+  counter-reset: item;
+}
+.list.ordered .list-item::before {
+  counter-increment: item;
+  content: counter(item) ".";
+  color: #1976d2;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+}
+
+/* Description list style */
+.list-item {
+  padding: 10px;
+  border-left: 4px solid #ff9800;
+  background-color: #fff8e1;
+  border-radius: 6px;
+}
+
+.term {
+  font-weight: bold;
+  color: #e65100;
+  margin-bottom: 3px;
+}
+
+.definition {
+  margin-left: 10px;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Responsive stacking for small screens */
+@media (max-width: 900px) {
+  .list-container {
+    flex-direction: column;
+  }
+
+  .list-section {
+    width: 100%;
+  }
+}

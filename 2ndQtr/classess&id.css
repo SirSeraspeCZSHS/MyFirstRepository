@@ -1,0 +1,99 @@
+.head {
+    background-color: lightblue;
+    width:92%;
+    float: left;
+    border: 2px solid black;
+    margin: 2%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    height: 200px;
+    padding: 15px;
+}
+.heading{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: navy;
+    margin-top: 20px;
+}
+.para{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: darkblue;
+}
+.content{
+    background-color: lightgreen;
+    width:92%;
+    float: left;
+    border: 2px solid black;
+    margin: 2%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    height: 800px;
+    padding: 15px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.sub-content{
+    background-color: rgb(227, 52, 52);
+    float: left;
+    border: 2px solid black;
+    margin: 2%;
+    box-shadow: 10px 10px 5px grey;
+    width: 29%;
+    height: 150px;
+}
+
+.city{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.ocean{
+    font-family: 'Arial', sans-serif;
+    color: greenyellow;
+    text-align: left;
+    border-radius: 200px;
+    margin-left: 50px;
+    width: 28%;
+}
+
+.continent{
+    font-family: 'Courier New', Courier, monospace;
+    color: lightskyblue;
+    text-align: right;
+}
+
+#box1{
+    background-color:darkred;
+}
+#box2{
+    background-color: red;
+}
+#box3{
+    background-color: orange;
+}
+#box4{
+    background-color: yellow
+}
+#box5{
+    background-color: yellowgreen;
+}
+#box6{
+    background-color: green;
+}
+#box7{
+    background-color: blue;
+}
+#box8{
+    background-color: indigo;
+}
+#box9{
+    background-color: violet;
+}
