@@ -18,8 +18,9 @@ header {
 nav {
   float: left;
   width: 20%;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 100%; /* only for demonstration, should be removed */
   background: #ccc;
+  border: solid blue 10px;
 }
 
 /* Style the list inside the menu */
@@ -28,6 +29,7 @@ nav ul {
   margin: 0;
   padding: 0;
   background-color: #ccc;
+  border: solid yellow 10px;
 }
 
 nav li a{
@@ -42,12 +44,25 @@ li a:hover {
   color: white;
 }
 
+ul li a:hover:not(.active) {
+  background-color: #111111;
+}
+
+ul li a.active {
+  background-color: #04AA6D;
+}
+
 article {
   float: left;
   padding: 20px;
   width: 80%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 100%; /* only for demonstration, should be removed */
+border: solid green 10px;
+}
+section{
+  border: solid #942626 10px;
+    overflow:auto;
 }
 
 /* Style the footer */
@@ -57,9 +72,27 @@ footer {
   text-align: center;
   color: white;
 }
-@media (max-width: 600px) {
-  nav, article {
+
+@media screen and (max-width: 800px) {
+  nav li a {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+    article {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  nav ul li a {
+    float: left;
+    padding: 15px;
   }
 }

@@ -1,0 +1,100 @@
+
+#header{
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: green;
+    position:fixed;
+    top:-20px;
+    left:0px;
+}
+#container{
+    height: 150px;
+    width: 100%;
+    border: solid 2px red;
+    position: static;
+}
+#stickyHeader{
+    height: 30px;
+    width: 100%;
+    background-color: yellow;
+    position:sticky;
+    top:53px;
+    left:0px;
+}
+#content{
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    position:relative;
+    left:46px;
+    top:47px;
+}
+#container2{
+    height: 150px;
+    width: 150px;
+    border: solid 2px red;
+    position: static;
+}
+#content2{
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    position:relative;
+    top:46px;
+    left:30px;
+}
+#container3{
+    height: 150px;
+    width: 150px;
+    border: solid 2px red;
+    position: relative;
+}
+#content3{
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    position:relative;
+    right:5px;
+    bottom:15px;
+}
+#footer{
+    padding: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: blue;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+}
+#footer p{
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}
+#ads{
+    height: 150px;
+    width: 150px;
+    background-color: brown;
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+#container4{
+    height: 100px;
+    width: 300px;
+    border: solid 2px blue ;
+    position: relative;
+    border-radius: 50px;
+}
+#content4{
+    height: 95px;
+    width: 100px;
+    border: solid 2px yellowgreen;
+    position:absolute;
+    right: 0PX;
+    border-radius: 50px;
+    background-color: yellowgreen;
+}
