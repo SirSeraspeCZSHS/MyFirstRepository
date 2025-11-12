@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Java Script</title>
+    <script>
+        document.getElementById("jshead").innerHTML = 
+            "Hello World from JavaScript in the head!";
+        window.alert("This is an alert from JavaScript in the head!");
+    </script>
+    <script src="myfirstjavascript.js"></script>
+</head>
+<body>
+    <h1>My first JavaScript</h1>
+    <h3>The next element is a result of a JavaScript located on the head</h3>
+    <p id="jshead"></p>
+    <h3>The next element is a result of a JavaScript located on the body</h3>
+    <p id="jsbody">Magpapakita kaya ito?</p>
+    <h3>The next element is a result of a JavaScript located externally</h3>
+    <p id="jsexternal">Magpapakita kaya ito?</p>
+    <script>
+        document.getElementById("jsbody").innerHTML = 
+            "Hello World from JavaScript in the body!";
+            window.alert("This is an alert from JavaScript in the body!");
+    </script>
+</body>
+</html>

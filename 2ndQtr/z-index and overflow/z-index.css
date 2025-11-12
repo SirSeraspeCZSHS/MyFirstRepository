@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden; /* Change to scroll or auto to see different overflow behaviors */
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.box:hover {
+  cursor: pointer;
+  z-index: 4; /* Bring to front on hover */
+}
+
+.box1 {
+  background-color: crimson;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+
+.box2 {
+  background-color: royalblue;
+  top: 150px;
+  left: 150px;
+  z-index: 3; /* This one is on top */
+}
+
+.box3 {
+  background-color: forestgreen;
+  top: 200px;
+  left: 200px;
+  z-index: 2;
+}
+

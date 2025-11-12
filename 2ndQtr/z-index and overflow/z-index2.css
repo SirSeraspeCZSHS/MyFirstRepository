@@ -1,0 +1,45 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.photo {
+  position: absolute;
+  transition: transform 0.3s, z-index 0.3s;
+}
+
+.photo img {
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Randomly positioned for creativity */
+.photo1 { top: 120px; left: 100px; z-index: 2; }
+.photo2 { top: 150px; left: 180px; z-index: 3; }
+.photo3 { top: 180px; left: 250px; z-index: 1; }
+.photo4 { top: 250px; left: 120px; z-index: 4; }
+.photo5 { top: 200px; left: 350px; z-index: 2; }
+
+/* Hover effect - bring photo to front */
+.photo:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.caption {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+  font-size: 1.1em;
+}
